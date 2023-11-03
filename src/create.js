@@ -8,7 +8,7 @@ const Create = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const blog = { title, body, author };
-    fetch("http://localhost:5000/create",{
+    fetch("https://vj-blog.onrender.com/create",{
         method:'POST',
         headers:{"content-Type":"application/json"},
         body:JSON.stringify(blog)
