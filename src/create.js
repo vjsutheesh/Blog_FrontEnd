@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
+const apiUrl = process.env.REACT_APP_API_URL;
 const Create = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
@@ -8,7 +9,7 @@ const Create = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const blog = { title, body, author };
-    fetch("https://vj-blog.onrender.com/create",{
+    fetch(`${apiUrl}/create`,{
         method:'POST',
         headers:{"content-Type":"application/json"},
         body:JSON.stringify(blog)
