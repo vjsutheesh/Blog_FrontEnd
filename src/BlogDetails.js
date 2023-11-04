@@ -30,4 +30,3 @@ const BlogDetails = () => {
  
 export default BlogDetails;
 
-// https://vjblogbackend.onrender.com
