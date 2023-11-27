@@ -11,10 +11,10 @@ function App() {
       <Navbar></Navbar>
       <div className="content">
         <Switch>
-          <Route exact pathname='/' >
+          <Route exact path='/' >
               <Home></Home>
           </Route>
-          <Route exact path="/create">
+          <Route  path="/create">
               <Create></Create>
           </Route>
           <Route path="/blogs/:id">
